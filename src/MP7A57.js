@@ -52,6 +52,7 @@ class MP7A57
 
         // First we want to set up this weapon
         item._id = i_id;
+        // 2% reduced recoil to account for the slightly reduced muzzle energy of the 5.7mm cartridge.
         item._props.RecoilForceUp = 64;
         item._props.RecoilForceBack = 218;
         item._props.ammoCaliber = "Caliber57x28";
@@ -60,9 +61,6 @@ class MP7A57
         item._props.Chambers[0] = database_f.server.tables.templates.items["5cc82d76e24e8d00134b4b83"]._props.Chambers[0];
         // Update the parent to this item
         item._props.Chambers[0]._parent = i_id;
-
-        // Now make the *gun* compatable with the 5.7 ammo; again, copy the P90 cartridges
-
         
         // add item back to database
         database_f.server.tables.templates.items[i_id] = item;
