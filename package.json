@@ -1,0 +1,8 @@
+{
+  "name": "MP7A57",
+  "author": "BinarySeeker",
+  "version": "1.0",
+  "license": "MIT",
+  "main": "package.js",
+  "dependencies": {}
+}
